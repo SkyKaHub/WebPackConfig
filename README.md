@@ -1,2 +1,0 @@
-# WebPackConfig
-Test webpack config
