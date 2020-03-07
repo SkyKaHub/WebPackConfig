@@ -73,15 +73,19 @@ module.exports = {
         }
       ]
     },
-    {
-        test: /\.s[ac]ss$/i,
+        {
+        test: /\.scss$/,
         use: [
           // Creates `style` nodes from JS strings
           'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
-          'sass-loader',
+          MiniCssExtractPlugin.loader,
+          {
+              loader: 'css-loader',
+              options: { sourceMap: true }
+          }, {
+              loader: 'sass-loader',
+              options: { sourceMap: true }
+          }
         ],
       },
     ]

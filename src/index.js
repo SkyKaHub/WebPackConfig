@@ -1,15 +1,22 @@
 // BOOTSTRAP CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
-// CSS
-import './assets/css/main.css';
+//Fonts Awesome
+import '@fortawesome/fontawesome-free/css/all.css';
 
+//Reset css
+import './assets/css/reset.css';
+
+// SCSS
+import './assets/scss/main.scss';
 
 // JQUERY
 import $ from 'jquery';
 
 // SWIPER
 import Swiper from 'swiper';
+import 'swiper/css/swiper.min.css';
 
-// JS
-import './js/'
+//Fancybox 3
+import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min.js';
